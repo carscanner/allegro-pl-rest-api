@@ -1,4 +1,4 @@
-# openapi_client.UsersOfferInformationApi
+# allegro_api.UsersOfferInformationApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -21,16 +21,16 @@ Use this resource to retrieve all fields of the particular offer. More informati
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.UsersOfferInformationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.UsersOfferInformationApi(allegro_api.ApiClient(configuration))
 offer_id = 'offer_id_example' # str | offerId
 
 try:
@@ -75,16 +75,16 @@ Search seller's offers by given criteria. Accept header should be set to applica
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.UsersOfferInformationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.UsersOfferInformationApi(allegro_api.ApiClient(configuration))
 seller_id = 'seller_id_example' # str | Seller id
 name = 'name_example' # str | Text to search in offer title (optional)
 selling_mode_price_amount_gte = 3.4 # float | Minimal threshold of price (optional)

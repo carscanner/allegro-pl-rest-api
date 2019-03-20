@@ -12,8 +12,8 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "openapi-client"
-VERSION = "1.0.0"
+NAME = "allegro-pl-rest-api"
+VERSION = "2019-03-20"
 # To install the library, run the following
 #
 # python setup.py install

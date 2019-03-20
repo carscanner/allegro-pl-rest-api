@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.pos import Pos  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.pos import Pos  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestPos(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPos(unittest.TestCase):
     def testPos(self):
         """Test Pos"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.pos.Pos()  # noqa: E501
+        # model = allegro_api.models.pos.Pos()  # noqa: E501
         pass
 
 

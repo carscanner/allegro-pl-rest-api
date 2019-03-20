@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.size_tables_api import SizeTablesApi  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.api.size_tables_api import SizeTablesApi  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestSizeTablesApi(unittest.TestCase):
     """SizeTablesApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.size_tables_api.SizeTablesApi()  # noqa: E501
+        self.api = allegro_api.api.size_tables_api.SizeTablesApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.order_management_api import OrderManagementApi  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.api.order_management_api import OrderManagementApi  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestOrderManagementApi(unittest.TestCase):
     """OrderManagementApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.order_management_api.OrderManagementApi()  # noqa: E501
+        self.api = allegro_api.api.order_management_api.OrderManagementApi()  # noqa: E501
 
     def tearDown(self):
         pass

@@ -1,4 +1,4 @@
-# openapi_client.ImagesAndAttachmentsApi
+# allegro_api.ImagesAndAttachmentsApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -20,17 +20,17 @@ Creates attachment and returns location header for file upload
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ImagesAndAttachmentsApi(openapi_client.ApiClient(configuration))
-offer_attachment_request = openapi_client.OfferAttachmentRequest() # OfferAttachmentRequest | offer attachment
+api_instance = allegro_api.ImagesAndAttachmentsApi(allegro_api.ApiClient(configuration))
+offer_attachment_request = allegro_api.OfferAttachmentRequest() # OfferAttachmentRequest | offer attachment
 
 try:
     # Create an offer attachment

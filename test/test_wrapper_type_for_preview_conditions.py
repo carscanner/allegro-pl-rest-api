@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.wrapper_type_for_preview_conditions import WrapperTypeForPreviewConditions  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.wrapper_type_for_preview_conditions import WrapperTypeForPreviewConditions  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestWrapperTypeForPreviewConditions(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestWrapperTypeForPreviewConditions(unittest.TestCase):
     def testWrapperTypeForPreviewConditions(self):
         """Test WrapperTypeForPreviewConditions"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.wrapper_type_for_preview_conditions.WrapperTypeForPreviewConditions()  # noqa: E501
+        # model = allegro_api.models.wrapper_type_for_preview_conditions.WrapperTypeForPreviewConditions()  # noqa: E501
         pass
 
 

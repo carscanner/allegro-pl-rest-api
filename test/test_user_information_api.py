@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.user_information_api import UserInformationApi  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.api.user_information_api import UserInformationApi  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestUserInformationApi(unittest.TestCase):
     """UserInformationApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.user_information_api.UserInformationApi()  # noqa: E501
+        self.api = allegro_api.api.user_information_api.UserInformationApi()  # noqa: E501
 
     def tearDown(self):
         pass

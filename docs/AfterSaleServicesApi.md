@@ -1,4 +1,4 @@
-# openapi_client.AfterSaleServicesApi
+# allegro_api.AfterSaleServicesApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -22,16 +22,16 @@ Use this resource to get seller implied warranties listing. More information abo
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AfterSaleServicesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.AfterSaleServicesApi(allegro_api.ApiClient(configuration))
 seller_id = 'seller_id_example' # str | Filter by user id. You are allowed to get your implied warranties only.
 limit = 56 # int | Limit (optional)
 offset = 0 # int | Offset (optional) (default to 0)
@@ -80,16 +80,16 @@ Use this resource to get seller return policies listing. More information about 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AfterSaleServicesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.AfterSaleServicesApi(allegro_api.ApiClient(configuration))
 seller_id = 'seller_id_example' # str | Filter by user id. You are allowed to get your return policies only.
 limit = 56 # int | Limit (optional)
 offset = 0 # int | Offset (optional) (default to 0)
@@ -138,16 +138,16 @@ Use this resource to get seller warranties listing. More information about this 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AfterSaleServicesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.AfterSaleServicesApi(allegro_api.ApiClient(configuration))
 seller_id = 'seller_id_example' # str | Filter by user id. You are allowed to get your warranties only.
 limit = 56 # int | Limit (optional)
 offset = 0 # int | Offset (optional) (default to 0)

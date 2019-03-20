@@ -1,4 +1,4 @@
-# openapi_client.PublicOfferInformationApi
+# allegro_api.PublicOfferInformationApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -20,16 +20,16 @@ Use this resource to get a list of offers according to provided parameters. At l
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-application
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PublicOfferInformationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PublicOfferInformationApi(allegro_api.ApiClient(configuration))
 category_id = 'category_id_example' # str | The category identifier to search. (optional)
 phrase = 'phrase_example' # str | Search phrase. (optional)
 seller_id = 'seller_id_example' # str | Identifier of the seller. May be provided more than once. Only items of provided sellers are returned. (optional)
@@ -53,16 +53,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PublicOfferInformationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PublicOfferInformationApi(allegro_api.ApiClient(configuration))
 category_id = 'category_id_example' # str | The category identifier to search. (optional)
 phrase = 'phrase_example' # str | Search phrase. (optional)
 seller_id = 'seller_id_example' # str | Identifier of the seller. May be provided more than once. Only items of provided sellers are returned. (optional)

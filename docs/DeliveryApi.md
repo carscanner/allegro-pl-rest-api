@@ -1,4 +1,4 @@
-# openapi_client.DeliveryApi
+# allegro_api.DeliveryApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -24,17 +24,17 @@ Use this resource to create a new seller's shipping rates set. More information 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DeliveryApi(openapi_client.ApiClient(configuration))
-shipping_rates_set = openapi_client.ShippingRatesSet() # ShippingRatesSet | Shipping rates set
+api_instance = allegro_api.DeliveryApi(allegro_api.ApiClient(configuration))
+shipping_rates_set = allegro_api.ShippingRatesSet() # ShippingRatesSet | Shipping rates set
 
 try:
     # Create a new shipping rates set
@@ -78,16 +78,16 @@ Use this resource to get a list of available delivery methods. More information 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-application
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DeliveryApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DeliveryApi(allegro_api.ApiClient(configuration))
 
 try:
     # Get the list of available delivery methods
@@ -102,16 +102,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DeliveryApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DeliveryApi(allegro_api.ApiClient(configuration))
 
 try:
     # Get the list of available delivery methods
@@ -152,16 +152,16 @@ Use this resource to get a list of seller's shipping rates. More information abo
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DeliveryApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DeliveryApi(allegro_api.ApiClient(configuration))
 seller_id = 'seller_id_example' # str | id of shipping rates owner
 
 try:
@@ -206,16 +206,16 @@ Use this resource to get details of the given shipping rates set. More informati
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DeliveryApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DeliveryApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | id of shipping rates set
 
 try:
@@ -260,18 +260,18 @@ Use this resource to edit a new seller's shipping rates set. More information ab
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DeliveryApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DeliveryApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | id of shipping rates set
-shipping_rates_set = openapi_client.ShippingRatesSet() # ShippingRatesSet | Shipping rates set
+shipping_rates_set = allegro_api.ShippingRatesSet() # ShippingRatesSet | Shipping rates set
 
 try:
     # Edit a user's shipping rates set

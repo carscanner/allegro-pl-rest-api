@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.implied_warranties_list_implied_warranty_basic import ImpliedWarrantiesListImpliedWarrantyBasic  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.implied_warranties_list_implied_warranty_basic import ImpliedWarrantiesListImpliedWarrantyBasic  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestImpliedWarrantiesListImpliedWarrantyBasic(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestImpliedWarrantiesListImpliedWarrantyBasic(unittest.TestCase):
     def testImpliedWarrantiesListImpliedWarrantyBasic(self):
         """Test ImpliedWarrantiesListImpliedWarrantyBasic"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.implied_warranties_list_implied_warranty_basic.ImpliedWarrantiesListImpliedWarrantyBasic()  # noqa: E501
+        # model = allegro_api.models.implied_warranties_list_implied_warranty_basic.ImpliedWarrantiesListImpliedWarrantyBasic()  # noqa: E501
         pass
 
 

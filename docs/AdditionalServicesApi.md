@@ -1,4 +1,4 @@
-# openapi_client.AdditionalServicesApi
+# allegro_api.AdditionalServicesApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -24,17 +24,17 @@ Use this resource to create a group of additional services. More information abo
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AdditionalServicesApi(openapi_client.ApiClient(configuration))
-additional_services_group_request = openapi_client.AdditionalServicesGroupRequest() # AdditionalServicesGroupRequest | Additional service group body
+api_instance = allegro_api.AdditionalServicesApi(allegro_api.ApiClient(configuration))
+additional_services_group_request = allegro_api.AdditionalServicesGroupRequest() # AdditionalServicesGroupRequest | Additional service group body
 
 try:
     # Create additional services group
@@ -78,16 +78,16 @@ Use this resource to get additional services group for a given ID. More informat
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AdditionalServicesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.AdditionalServicesApi(allegro_api.ApiClient(configuration))
 group_id = 'group_id_example' # str | Additional Service Group ID
 
 try:
@@ -132,16 +132,16 @@ Use this resource to get additional services definitions by user ID. More inform
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AdditionalServicesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.AdditionalServicesApi(allegro_api.ApiClient(configuration))
 user_id = 'user_id_example' # str | User ID
 offset = 0 # int | offset (optional) (default to 0)
 limit = 100 # int | limit (optional) (default to 100)
@@ -190,16 +190,16 @@ Use this resource to retrieve a list of groups with additional services availabl
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AdditionalServicesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.AdditionalServicesApi(allegro_api.ApiClient(configuration))
 user_id = 'user_id_example' # str | User ID
 offset = 0 # int | offset (optional) (default to 0)
 limit = 1000 # int | limit (optional) (default to 1000)
@@ -248,18 +248,18 @@ Use this resource to modify existing additional service group. More information 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.AdditionalServicesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.AdditionalServicesApi(allegro_api.ApiClient(configuration))
 group_id = 'group_id_example' # str | additional service group ID
-additional_services_group_request = openapi_client.AdditionalServicesGroupRequest() # AdditionalServicesGroupRequest | Additional service group body
+additional_services_group_request = allegro_api.AdditionalServicesGroupRequest() # AdditionalServicesGroupRequest | Additional service group body
 
 try:
     # Modify an additional services group

@@ -1,4 +1,4 @@
-# openapi_client.SizeTablesApi
+# allegro_api.SizeTablesApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -21,16 +21,16 @@ Use this resource to get selected size table. More information about this resour
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.SizeTablesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.SizeTablesApi(allegro_api.ApiClient(configuration))
 table_id = 'table_id_example' # str | tableId
 
 try:
@@ -75,16 +75,16 @@ Use this resource to get all size tables assigned to a seller account. More info
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.SizeTablesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.SizeTablesApi(allegro_api.ApiClient(configuration))
 user_id = 'user_id_example' # str | user.id
 
 try:

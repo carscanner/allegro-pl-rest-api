@@ -1,0 +1,26 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from allegro_api.api.additional_services_api import AdditionalServicesApi
+from allegro_api.api.after_sale_services_api import AfterSaleServicesApi
+from allegro_api.api.batch_offer_modification_api import BatchOfferModificationApi
+from allegro_api.api.categories_and_parameters_api import CategoriesAndParametersApi
+from allegro_api.api.contacts_api import ContactsApi
+from allegro_api.api.delivery_api import DeliveryApi
+from allegro_api.api.disputes_api import DisputesApi
+from allegro_api.api.images_and_attachments_api import ImagesAndAttachmentsApi
+from allegro_api.api.listing_badges_api import ListingBadgesApi
+from allegro_api.api.offer_management_api import OfferManagementApi
+from allegro_api.api.offer_tags_api import OfferTagsApi
+from allegro_api.api.offer_variants_api import OfferVariantsApi
+from allegro_api.api.order_management_api import OrderManagementApi
+from allegro_api.api.points_of_service_api import PointsOfServiceApi
+from allegro_api.api.pricing_api import PricingApi
+from allegro_api.api.public_offer_information_api import PublicOfferInformationApi
+from allegro_api.api.public_user_information_api import PublicUserInformationApi
+from allegro_api.api.sets_and_rebates_api import SetsAndRebatesApi
+from allegro_api.api.size_tables_api import SizeTablesApi
+from allegro_api.api.user_information_api import UserInformationApi
+from allegro_api.api.users_offer_information_api import UsersOfferInformationApi

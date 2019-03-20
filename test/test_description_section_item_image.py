@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.description_section_item_image import DescriptionSectionItemImage  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.description_section_item_image import DescriptionSectionItemImage  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestDescriptionSectionItemImage(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDescriptionSectionItemImage(unittest.TestCase):
     def testDescriptionSectionItemImage(self):
         """Test DescriptionSectionItemImage"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.description_section_item_image.DescriptionSectionItemImage()  # noqa: E501
+        # model = allegro_api.models.description_section_item_image.DescriptionSectionItemImage()  # noqa: E501
         pass
 
 

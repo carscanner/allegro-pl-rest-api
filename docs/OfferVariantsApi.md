@@ -1,4 +1,4 @@
-# openapi_client.OfferVariantsApi
+# allegro_api.OfferVariantsApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -23,18 +23,18 @@ Method | HTTP request | Description
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferVariantsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferVariantsApi(allegro_api.ApiClient(configuration))
 set_id = 'set_id_example' # str | Variant set id
-variant_set = openapi_client.VariantSet() # VariantSet | 
+variant_set = allegro_api.VariantSet() # VariantSet | 
 
 try:
     # [BETA] Create or update variant set
@@ -78,16 +78,16 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferVariantsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferVariantsApi(allegro_api.ApiClient(configuration))
 set_id = 'set_id_example' # str | Variant set id
 
 try:
@@ -131,16 +131,16 @@ void (empty response body)
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferVariantsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferVariantsApi(allegro_api.ApiClient(configuration))
 set_id = 'set_id_example' # str | setId
 
 try:
@@ -185,16 +185,16 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferVariantsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferVariantsApi(allegro_api.ApiClient(configuration))
 user_id = 'user_id_example' # str | Filter by user id, you are allowed to get your variant sets only.
 offset = 0 # int | Index of first returned variant set. (optional) (default to 0)
 limit = 10 # int | Maximum number of returned variant sets. (optional) (default to 10)

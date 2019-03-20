@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.removal import Removal  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.removal import Removal  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestRemoval(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRemoval(unittest.TestCase):
     def testRemoval(self):
         """Test Removal"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.removal.Removal()  # noqa: E501
+        # model = allegro_api.models.removal.Removal()  # noqa: E501
         pass
 
 

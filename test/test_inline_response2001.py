@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.inline_response2001 import InlineResponse2001  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.inline_response2001 import InlineResponse2001  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestInlineResponse2001(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestInlineResponse2001(unittest.TestCase):
     def testInlineResponse2001(self):
         """Test InlineResponse2001"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.inline_response2001.InlineResponse2001()  # noqa: E501
+        # model = allegro_api.models.inline_response2001.InlineResponse2001()  # noqa: E501
         pass
 
 

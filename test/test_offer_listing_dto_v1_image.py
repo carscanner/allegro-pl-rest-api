@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.offer_listing_dto_v1_image import OfferListingDtoV1Image  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.offer_listing_dto_v1_image import OfferListingDtoV1Image  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestOfferListingDtoV1Image(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOfferListingDtoV1Image(unittest.TestCase):
     def testOfferListingDtoV1Image(self):
         """Test OfferListingDtoV1Image"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.offer_listing_dto_v1_image.OfferListingDtoV1Image()  # noqa: E501
+        # model = allegro_api.models.offer_listing_dto_v1_image.OfferListingDtoV1Image()  # noqa: E501
         pass
 
 

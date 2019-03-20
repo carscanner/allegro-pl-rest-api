@@ -1,4 +1,4 @@
-# openapi_client.CategoriesAndParametersApi
+# allegro_api.CategoriesAndParametersApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -22,16 +22,16 @@ Use this resource to get IDs of main Allegro categories. More information about 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-application
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.CategoriesAndParametersApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.CategoriesAndParametersApi(allegro_api.ApiClient(configuration))
 parent_id = '954b95b6-43cf-4104-8354-dea4d9b10ddf' # str | parent.id (optional) (default to '954b95b6-43cf-4104-8354-dea4d9b10ddf')
 
 try:
@@ -47,16 +47,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.CategoriesAndParametersApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.CategoriesAndParametersApi(allegro_api.ApiClient(configuration))
 parent_id = '954b95b6-43cf-4104-8354-dea4d9b10ddf' # str | parent.id (optional) (default to '954b95b6-43cf-4104-8354-dea4d9b10ddf')
 
 try:
@@ -101,16 +101,16 @@ Use this resource to get the lowest tier category (remember – an offer can be 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-application
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.CategoriesAndParametersApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.CategoriesAndParametersApi(allegro_api.ApiClient(configuration))
 category_id = 'category_id_example' # str | categoryId
 
 try:
@@ -126,16 +126,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.CategoriesAndParametersApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.CategoriesAndParametersApi(allegro_api.ApiClient(configuration))
 category_id = 'category_id_example' # str | categoryId
 
 try:
@@ -180,16 +180,16 @@ Use this resource to get the lists of parameters that are supported by the categ
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-application
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.CategoriesAndParametersApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.CategoriesAndParametersApi(allegro_api.ApiClient(configuration))
 category_id = 'category_id_example' # str | categoryId
 
 try:
@@ -205,16 +205,16 @@ except ApiException as e:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.CategoriesAndParametersApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.CategoriesAndParametersApi(allegro_api.ApiClient(configuration))
 category_id = 'category_id_example' # str | categoryId
 
 try:

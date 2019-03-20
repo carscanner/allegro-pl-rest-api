@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.promotion_response_dto import PromotionResponseDto  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.promotion_response_dto import PromotionResponseDto  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestPromotionResponseDto(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPromotionResponseDto(unittest.TestCase):
     def testPromotionResponseDto(self):
         """Test PromotionResponseDto"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.promotion_response_dto.PromotionResponseDto()  # noqa: E501
+        # model = allegro_api.models.promotion_response_dto.PromotionResponseDto()  # noqa: E501
         pass
 
 

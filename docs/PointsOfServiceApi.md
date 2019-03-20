@@ -1,4 +1,4 @@
-# openapi_client.PointsOfServiceApi
+# allegro_api.PointsOfServiceApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -24,17 +24,17 @@ Use this resource to create a point of service. More information about this reso
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PointsOfServiceApi(openapi_client.ApiClient(configuration))
-pos = openapi_client.Pos() # Pos | Point of service
+api_instance = allegro_api.PointsOfServiceApi(allegro_api.ApiClient(configuration))
+pos = allegro_api.Pos() # Pos | Point of service
 
 try:
     # Create a point of service
@@ -78,16 +78,16 @@ Use this resource to delete a point of service. More information about this reso
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PointsOfServiceApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PointsOfServiceApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | Point of service ID
 
 try:
@@ -131,16 +131,16 @@ Use this resource to get a details of a point of service for a given ID. More in
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PointsOfServiceApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PointsOfServiceApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | Point of service ID
 
 try:
@@ -185,16 +185,16 @@ Use this resource to get a list of points of service by seller ID. More informat
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PointsOfServiceApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PointsOfServiceApi(allegro_api.ApiClient(configuration))
 seller_id = 'seller_id_example' # str | User ID
 
 try:
@@ -239,18 +239,18 @@ Use this resource to modify a point of service. More information about this reso
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PointsOfServiceApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PointsOfServiceApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | Point of service ID. Must match values with 'id' property from the body.
-pos = openapi_client.Pos() # Pos | Point of service
+pos = allegro_api.Pos() # Pos | Point of service
 
 try:
     # Modify a point of service

@@ -1,4 +1,4 @@
-# openapi_client.SetsAndRebatesApi
+# allegro_api.SetsAndRebatesApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -23,17 +23,17 @@ This endpoint creates a new promotion. You can define the following types of pro
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.SetsAndRebatesApi(openapi_client.ApiClient(configuration))
-seller_create_rebate_request_dto = openapi_client.SellerCreateRebateRequestDto() # SellerCreateRebateRequestDto | request
+api_instance = allegro_api.SetsAndRebatesApi(allegro_api.ApiClient(configuration))
+seller_create_rebate_request_dto = allegro_api.SellerCreateRebateRequestDto() # SellerCreateRebateRequestDto | request
 
 try:
     # Create a new promotion
@@ -77,16 +77,16 @@ Use this resource to deactivate the requested promotion. You need to use its uni
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.SetsAndRebatesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.SetsAndRebatesApi(allegro_api.ApiClient(configuration))
 promotion_id = 'promotion_id_example' # str | promotionId
 
 try:
@@ -130,16 +130,16 @@ Use this resource to returns the requested promotion. You need to use its unique
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.SetsAndRebatesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.SetsAndRebatesApi(allegro_api.ApiClient(configuration))
 promotion_id = 'promotion_id_example' # str | promotionId
 
 try:
@@ -184,16 +184,16 @@ Get a list of promotions defined by the specified user. You can list only your o
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.SetsAndRebatesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.SetsAndRebatesApi(allegro_api.ApiClient(configuration))
 user_id = 'user_id_example' # str | user.id
 limit = 50 # int | limit (optional) (default to 50)
 offset = 0 # int | offset (optional) (default to 0)

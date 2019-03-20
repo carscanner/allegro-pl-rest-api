@@ -1,4 +1,4 @@
-# openapi_client.PricingApi
+# allegro_api.PricingApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -21,16 +21,16 @@ This endpoint returns current offer quotes (listing and promo fees) cycles for a
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PricingApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PricingApi(allegro_api.ApiClient(configuration))
 offer_id = ['offer_id_example'] # list[str] | List of offer ids, maximum 20 values
 name = 'name_example' # str |  (optional)
 
@@ -77,17 +77,17 @@ This endpoint calculates fees for a provided offer conditions. The quotation is 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PricingApi(openapi_client.ApiClient(configuration))
-wrapper_type_for_preview_conditions = openapi_client.WrapperTypeForPreviewConditions() # WrapperTypeForPreviewConditions | command
+api_instance = allegro_api.PricingApi(allegro_api.ApiClient(configuration))
+wrapper_type_for_preview_conditions = allegro_api.WrapperTypeForPreviewConditions() # WrapperTypeForPreviewConditions | command
 
 try:
     # Preview offer fees

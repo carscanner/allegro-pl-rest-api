@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.offer_attachment_request import OfferAttachmentRequest  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.offer_attachment_request import OfferAttachmentRequest  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestOfferAttachmentRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestOfferAttachmentRequest(unittest.TestCase):
     def testOfferAttachmentRequest(self):
         """Test OfferAttachmentRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.offer_attachment_request.OfferAttachmentRequest()  # noqa: E501
+        # model = allegro_api.models.offer_attachment_request.OfferAttachmentRequest()  # noqa: E501
         pass
 
 

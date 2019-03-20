@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.images_and_attachments_api import ImagesAndAttachmentsApi  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.api.images_and_attachments_api import ImagesAndAttachmentsApi  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestImagesAndAttachmentsApi(unittest.TestCase):
     """ImagesAndAttachmentsApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.images_and_attachments_api.ImagesAndAttachmentsApi()  # noqa: E501
+        self.api = allegro_api.api.images_and_attachments_api.ImagesAndAttachmentsApi()  # noqa: E501
 
     def tearDown(self):
         pass

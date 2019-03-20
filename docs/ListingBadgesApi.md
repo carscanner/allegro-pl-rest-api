@@ -1,4 +1,4 @@
-# openapi_client.ListingBadgesApi
+# allegro_api.ListingBadgesApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -24,17 +24,17 @@ For an additional fee, you can place a discount mark on a list of offers.       
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ListingBadgesApi(openapi_client.ApiClient(configuration))
-promotion_campaign_request_dto = openapi_client.PromotionCampaignRequestDto() # PromotionCampaignRequestDto | request
+api_instance = allegro_api.ListingBadgesApi(allegro_api.ApiClient(configuration))
+promotion_campaign_request_dto = allegro_api.PromotionCampaignRequestDto() # PromotionCampaignRequestDto | request
 
 try:
     # Create an application for a promotion campaign
@@ -78,16 +78,16 @@ Use this resource to delete campaign from promotion by promotion id and campaign
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ListingBadgesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.ListingBadgesApi(allegro_api.ApiClient(configuration))
 promotion_id = 'promotion_id_example' # str | The promotion unique id
 campaign_id = 'campaign_id_example' # str | The campaign unique id
 
@@ -133,16 +133,16 @@ Use this resource to delete promotion campaign application by application id. Yo
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ListingBadgesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.ListingBadgesApi(allegro_api.ApiClient(configuration))
 application_id = 'application_id_example' # str | The application unique id
 
 try:
@@ -186,16 +186,16 @@ Use this resource to retrieve promotion campaign application. You need to use it
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ListingBadgesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.ListingBadgesApi(allegro_api.ApiClient(configuration))
 application_id = 'application_id_example' # str | The application unique id
 
 try:
@@ -240,16 +240,16 @@ Use this resource to retrieve promotion campaigns. You can find promotion campai
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ListingBadgesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.ListingBadgesApi(allegro_api.ApiClient(configuration))
 promotion_id = 'promotion_id_example' # str | The promotion unique id (optional)
 limit = 50 # int | limit (optional) (default to 50)
 offset = 0 # int | offset (optional) (default to 0)

@@ -1,4 +1,4 @@
-# openapi_client.OrderManagementApi
+# allegro_api.OrderManagementApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -26,18 +26,18 @@ Add a parcel tracking number (shipment) to given order line items.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OrderManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OrderManagementApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | Order identifier
-checkout_form_add_waybill_request = openapi_client.CheckoutFormAddWaybillRequest() # CheckoutFormAddWaybillRequest | request
+checkout_form_add_waybill_request = allegro_api.CheckoutFormAddWaybillRequest() # CheckoutFormAddWaybillRequest | request
 
 try:
     # [BETA] Add a parcel tracking number
@@ -82,16 +82,16 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OrderManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OrderManagementApi(allegro_api.ApiClient(configuration))
 line_item_id = 'line_item_id_example' # str | line item id (optional)
 deal_id = 'deal_id_example' # str | dealId (optional)
 
@@ -138,16 +138,16 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OrderManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OrderManagementApi(allegro_api.ApiClient(configuration))
 offset = 56 # int | Index of first returned checkout-form from all search results. (optional)
 limit = 56 # int | Maximum number of checkout-forms in response (acceptable values: from 0 to 100, default is 100). (optional)
 status = 'status_example' # str | Specify status value that checkout-forms must have to be included in the output. Allowed values are:   * `BOUGHT`: purchase without checkout form filled in   * `FILLED_IN`: checkout form filled in but payment is not completed yet so data could still change   * `READY_FOR_PROCESSING`: payment completed. Purchase is ready for processing.   * `ALL`: return all checkout-forms  (optional)
@@ -200,16 +200,16 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OrderManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OrderManagementApi(allegro_api.ApiClient(configuration))
 
 try:
     # [BETA] Get order events statistics
@@ -250,16 +250,16 @@ This endpoint does not need any parameter.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OrderManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OrderManagementApi(allegro_api.ApiClient(configuration))
 _from = '_from_example' # str | You can use the event ID to retrieve subsequent chunks of events (optional)
 type = ['type_example'] # list[str] | Specify array of event types for filtering. Allowed values are:   * `BOUGHT`: purchase without checkout form filled in   * `FILLED_IN`: checkout form filled in but payment is not completed yet so data could still change   * `READY_FOR_PROCESSING`: payment completed. Purchase is ready for processing. (optional)
 limit = 100 # int | Limit in the range of 1-1000 (optional) (default to 100)
@@ -308,16 +308,16 @@ Get a list of parcel tracking numbers currently assigned to the order. Orders ca
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OrderManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OrderManagementApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | Order identifier
 
 try:
@@ -362,16 +362,16 @@ Name | Type | Description  | Notes
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OrderManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OrderManagementApi(allegro_api.ApiClient(configuration))
 id = 29738e61-7f6a-11e8-ac45-09db60ede9d6 # str | Checkout Form id
 
 try:

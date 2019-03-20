@@ -1,4 +1,4 @@
-# openapi_client.OfferManagementApi
+# allegro_api.OfferManagementApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -26,18 +26,18 @@ Use this resource to modify multiple offers publication at once. More informatio
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferManagementApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
-publication_change_command_dto = openapi_client.PublicationChangeCommandDto() # PublicationChangeCommandDto | publicationChangeCommandDto
+publication_change_command_dto = allegro_api.PublicationChangeCommandDto() # PublicationChangeCommandDto | publicationChangeCommandDto
 
 try:
     # Batch offer publish / unpublish
@@ -82,19 +82,19 @@ Use this resource to change the Buy Now price in a single offer. More informatio
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferManagementApi(allegro_api.ApiClient(configuration))
 offer_id = 'offer_id_example' # str | Offer identifier
 command_id = 'command_id_example' # str | Universally Unique  Identifier (UUID) you generate to enforce idempotency. UUID specification: http://www.ietf.org/rfc/rfc4122.txt
-change_price_without_output = openapi_client.ChangePriceWithoutOutput() # ChangePriceWithoutOutput | Command input data. Note that the amount field must be transferred as a string to avoid rounding errors. A currency must be provided as a 3-letter code as defined in ISO 4217. (https://en.wikipedia.org/wiki/ISO_4217#Active_codes)
+change_price_without_output = allegro_api.ChangePriceWithoutOutput() # ChangePriceWithoutOutput | Command input data. Note that the amount field must be transferred as a string to avoid rounding errors. A currency must be provided as a 3-letter code as defined in ISO 4217. (https://en.wikipedia.org/wiki/ISO_4217#Active_codes)
 
 try:
     # Modify the Buy Now price in an offer
@@ -140,17 +140,17 @@ Use this resource to create a draft offer. More information about this resource 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferManagementApi(openapi_client.ApiClient(configuration))
-offer = openapi_client.Offer() # Offer | offer
+api_instance = allegro_api.OfferManagementApi(allegro_api.ApiClient(configuration))
+offer = allegro_api.Offer() # Offer | offer
 
 try:
     # Create a draft offer
@@ -194,16 +194,16 @@ Use this resource to delete a draft offer. More information about this resource 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferManagementApi(allegro_api.ApiClient(configuration))
 offer_id = 'offer_id_example' # str | offerId
 
 try:
@@ -247,16 +247,16 @@ Use this resource to retrieve information about the offer listing statuses. You 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferManagementApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 
 try:
@@ -301,16 +301,16 @@ Use this resource to retrieve information about the offer statuses on the site (
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferManagementApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 limit = 56 # int | limit (optional)
 offset = 56 # int | offset (optional)
@@ -359,18 +359,18 @@ Use this resource to complete a draft offer or edit ongoing offers. More informa
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferManagementApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferManagementApi(allegro_api.ApiClient(configuration))
 offer_id = 'offer_id_example' # str | offerId
-offer = openapi_client.Offer() # Offer | offer
+offer = allegro_api.Offer() # Offer | offer
 
 try:
     # Complete a draft offer or edit an offer

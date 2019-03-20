@@ -1,4 +1,4 @@
-# openapi_client.BatchOfferModificationApi
+# allegro_api.BatchOfferModificationApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -28,16 +28,16 @@ Use this resource to find out how many offers were edited within one {commandId}
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 
 try:
@@ -80,16 +80,16 @@ Change price command summary
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 
 try:
@@ -134,16 +134,16 @@ Defaults: limit = 100, offset = 0
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 limit = 56 # int | limit (optional)
 offset = 56 # int | offset (optional)
@@ -190,16 +190,16 @@ Change quantity command summary
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 
 try:
@@ -244,16 +244,16 @@ Defaults: limit = 100, offset = 0
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 limit = 56 # int | limit (optional)
 offset = 56 # int | offset (optional)
@@ -302,16 +302,16 @@ Use this resource to retrieve a detailed summary of changes introduced within on
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
 limit = 56 # int | limit (optional)
 offset = 56 # int | offset (optional)
@@ -360,18 +360,18 @@ Use this resource to modify multiple offers at once. More information about this
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
-offer_change_command = openapi_client.OfferChangeCommand() # OfferChangeCommand | offerChangeCommandDto
+offer_change_command = allegro_api.OfferChangeCommand() # OfferChangeCommand | offerChangeCommandDto
 
 try:
     # Batch offer modification
@@ -414,18 +414,18 @@ Batch offer price modification
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
-offer_price_change_command = openapi_client.OfferPriceChangeCommand() # OfferPriceChangeCommand | offerPriceChangeCommandDto
+offer_price_change_command = allegro_api.OfferPriceChangeCommand() # OfferPriceChangeCommand | offerPriceChangeCommandDto
 
 try:
     # Batch offer price modification
@@ -468,18 +468,18 @@ Batch offer quantity modification
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.BatchOfferModificationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.BatchOfferModificationApi(allegro_api.ApiClient(configuration))
 command_id = 'command_id_example' # str | commandId
-offer_quantity_change_command = openapi_client.OfferQuantityChangeCommand() # OfferQuantityChangeCommand | offerQuantityChangeCommandDto
+offer_quantity_change_command = allegro_api.OfferQuantityChangeCommand() # OfferQuantityChangeCommand | offerQuantityChangeCommandDto
 
 try:
     # Batch offer quantity modification

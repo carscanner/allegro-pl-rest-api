@@ -1,4 +1,4 @@
-# openapi_client.ContactsApi
+# allegro_api.ContactsApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -23,17 +23,17 @@ Use this resource to create a new contact. More information about this resource 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ContactsApi(openapi_client.ApiClient(configuration))
-contact_request = openapi_client.ContactRequest() # ContactRequest | New contact
+api_instance = allegro_api.ContactsApi(allegro_api.ApiClient(configuration))
+contact_request = allegro_api.ContactRequest() # ContactRequest | New contact
 
 try:
     # Create a new contact
@@ -77,16 +77,16 @@ Use this resource to get contact details. More information about this resource y
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ContactsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.ContactsApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | Contact id
 
 try:
@@ -131,16 +131,16 @@ Use this resource to get details of many contacts. More information about this r
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ContactsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.ContactsApi(allegro_api.ApiClient(configuration))
 seller_id = 'seller_id_example' # str | id of contacts owner
 
 try:
@@ -185,18 +185,18 @@ Use this resource to modify contact details. More information about this resourc
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.ContactsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.ContactsApi(allegro_api.ApiClient(configuration))
 id = 'id_example' # str | Contact id
-contact_request = openapi_client.ContactRequest() # ContactRequest | Contact
+contact_request = allegro_api.ContactRequest() # ContactRequest | Contact
 
 try:
     # Modify contact details

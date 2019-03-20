@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.address import Address  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.address import Address  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestAddress(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAddress(unittest.TestCase):
     def testAddress(self):
         """Test Address"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.address.Address()  # noqa: E501
+        # model = allegro_api.models.address.Address()  # noqa: E501
         pass
 
 

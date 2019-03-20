@@ -1,4 +1,4 @@
-# openapi_client.DisputesApi
+# allegro_api.DisputesApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -25,18 +25,18 @@ Use this resource to post a message in certain dispute. At least one of fields: 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DisputesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DisputesApi(allegro_api.ApiClient(configuration))
 dispute_id = 'dispute_id_example' # str | Id of the dispute
-message_request = openapi_client.MessageRequest() # MessageRequest | Message request
+message_request = allegro_api.MessageRequest() # MessageRequest | Message request
 
 try:
     # Add a message to a dispute
@@ -81,17 +81,17 @@ Use this resource to post an attachment declaration. More information about this
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DisputesApi(openapi_client.ApiClient(configuration))
-attachment_declaration = openapi_client.AttachmentDeclaration() # AttachmentDeclaration | A detailed declaration of a file to be uploaded
+api_instance = allegro_api.DisputesApi(allegro_api.ApiClient(configuration))
+attachment_declaration = allegro_api.AttachmentDeclaration() # AttachmentDeclaration | A detailed declaration of a file to be uploaded
 
 try:
     # Create an attachment declaration
@@ -135,16 +135,16 @@ Use this resource to get an attachment. More information about this resource you
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DisputesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DisputesApi(allegro_api.ApiClient(configuration))
 attachment_id = 'attachment_id_example' # str | Id of the attachment resource
 
 try:
@@ -189,16 +189,16 @@ Use this resource to get a single dispute. More information about this resource 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DisputesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DisputesApi(allegro_api.ApiClient(configuration))
 dispute_id = 'dispute_id_example' # str | Id of the dispute
 
 try:
@@ -243,16 +243,16 @@ Use this resource to get the list of your disputes. More information about this 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DisputesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DisputesApi(allegro_api.ApiClient(configuration))
 checkout_form_id = 29738e61-7f6a-11e8-ac45-09db60ede9d6 # str | CheckoutForm id (optional)
 
 try:
@@ -297,16 +297,16 @@ Use this resource to get the list of messages within dispute. More information a
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.DisputesApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.DisputesApi(allegro_api.ApiClient(configuration))
 dispute_id = 'dispute_id_example' # str | Id of the dispute
 
 try:

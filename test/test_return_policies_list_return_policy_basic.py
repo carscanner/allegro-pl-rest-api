@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.models.return_policies_list_return_policy_basic import ReturnPoliciesListReturnPolicyBasic  # noqa: E501
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.models.return_policies_list_return_policy_basic import ReturnPoliciesListReturnPolicyBasic  # noqa: E501
+from allegro_api.rest import ApiException
 
 
 class TestReturnPoliciesListReturnPolicyBasic(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestReturnPoliciesListReturnPolicyBasic(unittest.TestCase):
     def testReturnPoliciesListReturnPolicyBasic(self):
         """Test ReturnPoliciesListReturnPolicyBasic"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = openapi_client.models.return_policies_list_return_policy_basic.ReturnPoliciesListReturnPolicyBasic()  # noqa: E501
+        # model = allegro_api.models.return_policies_list_return_policy_basic.ReturnPoliciesListReturnPolicyBasic()  # noqa: E501
         pass
 
 

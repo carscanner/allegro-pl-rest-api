@@ -1,4 +1,4 @@
-# openapi_client.PublicUserInformationApi
+# allegro_api.PublicUserInformationApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -20,16 +20,16 @@ Use this resource to receive feedback statistics. More information about this re
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.PublicUserInformationApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.PublicUserInformationApi(allegro_api.ApiClient(configuration))
 user_id = 'user_id_example' # str | userId
 
 try:

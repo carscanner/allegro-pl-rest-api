@@ -1,4 +1,4 @@
-# openapi_client.OfferTagsApi
+# allegro_api.OfferTagsApi
 
 All URIs are relative to *https://api.allegro.pl*
 
@@ -25,18 +25,18 @@ Use this resource to assign a tag to offer. More information about this resource
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferTagsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferTagsApi(allegro_api.ApiClient(configuration))
 offer_id = 'offer_id_example' # str | offerId
-tag_ids_request = openapi_client.TagIdsRequest() # TagIdsRequest | request
+tag_ids_request = allegro_api.TagIdsRequest() # TagIdsRequest | request
 
 try:
     # Assign tags to an offer
@@ -80,17 +80,17 @@ Use this resource to create a new tag. More information about this resource you 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferTagsApi(openapi_client.ApiClient(configuration))
-tag_request = openapi_client.TagRequest() # TagRequest | request
+api_instance = allegro_api.OfferTagsApi(allegro_api.ApiClient(configuration))
+tag_request = allegro_api.TagRequest() # TagRequest | request
 
 try:
     # Create a tag
@@ -134,16 +134,16 @@ Use this resource to delete the tag. More information about this resource you ca
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferTagsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferTagsApi(allegro_api.ApiClient(configuration))
 tag_id = 'tag_id_example' # str | tagId
 
 try:
@@ -187,16 +187,16 @@ Use this resource to get a list of tags assigned to offer. More information abou
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferTagsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferTagsApi(allegro_api.ApiClient(configuration))
 offer_id = 'offer_id_example' # str | offerId
 
 try:
@@ -241,16 +241,16 @@ Use this resource to get a list of tags defined by the specified user (Defaults:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferTagsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferTagsApi(allegro_api.ApiClient(configuration))
 user_id = 'user_id_example' # str | user.id
 limit = 56 # int | limit (optional)
 offset = 56 # int | offset (optional)
@@ -299,18 +299,18 @@ Use this resource to update a tag. More information about this resource you can 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import allegro_api
+from allegro_api.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: bearer-token-for-user
-configuration = openapi_client.Configuration()
+configuration = allegro_api.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = openapi_client.OfferTagsApi(openapi_client.ApiClient(configuration))
+api_instance = allegro_api.OfferTagsApi(allegro_api.ApiClient(configuration))
 tag_id = 'tag_id_example' # str | tagId
-tag_request = openapi_client.TagRequest() # TagRequest | request
+tag_request = allegro_api.TagRequest() # TagRequest | request
 
 try:
     # Modify a tag
