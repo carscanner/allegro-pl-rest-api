@@ -14,7 +14,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "2019-03-20"
+__version__ = "2019.0"
 
 # import apis into sdk package
 from allegro_api.api.additional_services_api import AdditionalServicesApi
