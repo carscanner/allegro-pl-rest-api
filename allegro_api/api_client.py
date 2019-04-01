@@ -604,6 +604,10 @@ class ApiClient(object):
                 )
             )
 
+    @staticmethod
+    def _has_attr(obj: any, name: str) -> bool:
+        return name in obj.__dict__.keys()
+
     def __deserialize_model(self, data, klass):
         """Deserializes list or dict to model.
 
@@ -612,10 +616,12 @@ class ApiClient(object):
         :return: model object.
         """
 
-        if not klass.openapi_types and not hasattr(klass,
-                                                   'get_real_child_model'):
+        if not klass.openapi_types and not ApiClient._has_attr(klass, 'get_real_child_model'):
             return data
 
+        else:
+            if ApiClient._has_attr(klass, 'get_real_child_model'):
+                return self.__deserialize(data, klass.get_real_child_model(data))
         kwargs = {}
         if klass.openapi_types is not None:
             for attr, attr_type in six.iteritems(klass.openapi_types):
@@ -627,7 +633,7 @@ class ApiClient(object):
 
         instance = klass(**kwargs)
 
-        if hasattr(instance, 'get_real_child_model'):
+        if ApiClient._has_attr(instance, 'get_real_child_model'):
             klass_name = instance.get_real_child_model(data)
             if klass_name:
                 instance = self.__deserialize(data, klass_name)
