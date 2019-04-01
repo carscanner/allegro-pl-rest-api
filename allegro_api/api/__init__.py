@@ -18,6 +18,7 @@ from allegro_api.api.offer_variants_api import OfferVariantsApi
 from allegro_api.api.order_management_api import OrderManagementApi
 from allegro_api.api.points_of_service_api import PointsOfServiceApi
 from allegro_api.api.pricing_api import PricingApi
+from allegro_api.api.products_api import ProductsApi
 from allegro_api.api.public_offer_information_api import PublicOfferInformationApi
 from allegro_api.api.public_user_information_api import PublicUserInformationApi
 from allegro_api.api.sets_and_rebates_api import SetsAndRebatesApi

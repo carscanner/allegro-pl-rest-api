@@ -112,6 +112,7 @@ from allegro_api.models.fee import Fee
 from allegro_api.models.float_category_parameter import FloatCategoryParameter
 from allegro_api.models.full_definition_response import FullDefinitionResponse
 from allegro_api.models.general_report import GeneralReport
+from allegro_api.models.get_sale_products_response import GetSaleProductsResponse
 from allegro_api.models.header import Header
 from allegro_api.models.image_url import ImageUrl
 from allegro_api.models.implied_warranties_list_implied_warranty_basic import ImpliedWarrantiesListImpliedWarrantyBasic
@@ -175,8 +176,6 @@ from allegro_api.models.offer_quote_dto import OfferQuoteDto
 from allegro_api.models.offer_quotes_dto import OfferQuotesDto
 from allegro_api.models.offer_reference import OfferReference
 from allegro_api.models.offer_seller import OfferSeller
-from allegro_api.models.offer_seller_contact import OfferSellerContact
-from allegro_api.models.offer_seller_contact_phones import OfferSellerContactPhones
 from allegro_api.models.offer_selling_mode import OfferSellingMode
 from allegro_api.models.offer_stock import OfferStock
 from allegro_api.models.offer_vendor import OfferVendor
@@ -201,6 +200,8 @@ from allegro_api.models.price_modification import PriceModification
 from allegro_api.models.price_modification_fixed_price import PriceModificationFixedPrice
 from allegro_api.models.price_modification_value_change import PriceModificationValueChange
 from allegro_api.models.processing_status import ProcessingStatus
+from allegro_api.models.product_parameter import ProductParameter
+from allegro_api.models.product_parameter_options import ProductParameterOptions
 from allegro_api.models.promotion import Promotion
 from allegro_api.models.promotion_campaign_request_dto import PromotionCampaignRequestDto
 from allegro_api.models.promotion_campaign_response_dto import PromotionCampaignResponseDto
@@ -220,6 +221,7 @@ from allegro_api.models.removal import Removal
 from allegro_api.models.removal_request import RemovalRequest
 from allegro_api.models.return_policies_list_return_policy_basic import ReturnPoliciesListReturnPolicyBasic
 from allegro_api.models.return_policy_basic import ReturnPolicyBasic
+from allegro_api.models.sale_product_response_dto import SaleProductResponseDto
 from allegro_api.models.search_result import SearchResult
 from allegro_api.models.seller import Seller
 from allegro_api.models.seller_create_rebate_request_dto import SellerCreateRebateRequestDto

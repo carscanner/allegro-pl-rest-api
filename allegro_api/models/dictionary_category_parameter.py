@@ -52,8 +52,8 @@ class DictionaryCategoryParameter(CategoryParameter):
         'options': 'options'
     }
 
-    def __init__(self, id: str = None, name=None, required=None, unit=None, options=None, type='DICTIONARY',
-                 restrictions=None, dictionary=None):
+    def __init__(self, id, name=None, required=None, unit=None, options=None, type='dictionary', restrictions=None,
+                 dictionary=None):
         """DictionaryCategoryParameter - a model defined in OpenAPI"""  # noqa: E501
 
         super().__init__(id, name, type, required, unit, options)

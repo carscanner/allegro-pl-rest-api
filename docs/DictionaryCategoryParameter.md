@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **str** |  | [optional] [default to 'DICTIONARY']
+**type** | **str** |  | [optional] [default to 'dictionary']
 **restrictions** | **object** |  | [optional] 
 **dictionary** | **list[object]** |  | [optional] 
 

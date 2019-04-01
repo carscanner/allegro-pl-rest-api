@@ -50,8 +50,7 @@ class StringCategoryParameter(CategoryParameter):
         'options': 'options'
     }
 
-    def __init__(self, id: str = None, name=None, required=None, unit=None, options=None, type='STRING',
-                 restrictions=None):
+    def __init__(self, id, name=None, required=None, unit=None, options=None, type='string', restrictions=None):
         """StringCategoryParameter - a model defined in OpenAPI"""  # noqa: E501
 
         super().__init__(id, name, type, required, unit, options)
