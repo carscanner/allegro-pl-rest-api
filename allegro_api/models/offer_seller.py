@@ -33,24 +33,21 @@ class OfferSeller(object):
     openapi_types = {
         'id': 'str',
         'company': 'bool',
-        'super_seller': 'bool',
-        'contact': 'OfferSellerContact'
+        'super_seller': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
         'company': 'company',
-        'super_seller': 'superSeller',
-        'contact': 'contact'
+        'super_seller': 'superSeller'
     }
 
-    def __init__(self, id=None, company=None, super_seller=None, contact=None):  # noqa: E501
+    def __init__(self, id=None, company=None, super_seller=None):  # noqa: E501
         """OfferSeller - a model defined in OpenAPI"""  # noqa: E501
 
         self._id = None
         self._company = None
         self._super_seller = None
-        self._contact = None
         self.discriminator = None
 
         if id is not None:
@@ -59,8 +56,6 @@ class OfferSeller(object):
             self.company = company
         if super_seller is not None:
             self.super_seller = super_seller
-        if contact is not None:
-            self.contact = contact
 
     @property
     def id(self):
@@ -130,27 +125,6 @@ class OfferSeller(object):
         """
 
         self._super_seller = super_seller
-
-    @property
-    def contact(self):
-        """Gets the contact of this OfferSeller.  # noqa: E501
-
-
-        :return: The contact of this OfferSeller.  # noqa: E501
-        :rtype: OfferSellerContact
-        """
-        return self._contact
-
-    @contact.setter
-    def contact(self, contact):
-        """Sets the contact of this OfferSeller.
-
-
-        :param contact: The contact of this OfferSeller.  # noqa: E501
-        :type: OfferSellerContact
-        """
-
-        self._contact = contact
 
     def to_dict(self):
         """Returns the model properties as a dict"""

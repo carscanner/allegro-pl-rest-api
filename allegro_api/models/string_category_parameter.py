@@ -40,7 +40,7 @@ class StringCategoryParameter(object):
         'restrictions': 'restrictions'
     }
 
-    def __init__(self, type='STRING', restrictions=None):  # noqa: E501
+    def __init__(self, type='string', restrictions=None):  # noqa: E501
         """StringCategoryParameter - a model defined in OpenAPI"""  # noqa: E501
 
         self._type = None

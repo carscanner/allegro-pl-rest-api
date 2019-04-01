@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import allegro_api
-from allegro_api.models.offer_seller_contact import OfferSellerContact  # noqa: E501
+from allegro_api.models.product_parameter import ProductParameter  # noqa: E501
 from allegro_api.rest import ApiException
 
 
-class TestOfferSellerContact(unittest.TestCase):
-    """OfferSellerContact unit test stubs"""
+class TestProductParameter(unittest.TestCase):
+    """ProductParameter unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestOfferSellerContact(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testOfferSellerContact(self):
-        """Test OfferSellerContact"""
+    def testProductParameter(self):
+        """Test ProductParameter"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = allegro_api.models.offer_seller_contact.OfferSellerContact()  # noqa: E501
+        # model = allegro_api.models.product_parameter.ProductParameter()  # noqa: E501
         pass
 
 

@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **name** | **str** | Name of the offer. Words used in the name field cannot be longer than 30 characters. | 
 **parameters** | [**list[Parameter]**](Parameter.md) |  | [optional] 
 **payments** | [**Payments**](Payments.md) |  | [optional] 
+**product** | [**JustId**](JustId.md) |  | [optional] 
 **promotion** | [**Promotion**](Promotion.md) |  | [optional] 
 **publication** | [**Publication**](Publication.md) |  | [optional] 
 **selling_mode** | [**SellingMode**](SellingMode.md) |  | [optional] 

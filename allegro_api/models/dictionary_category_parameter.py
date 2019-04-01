@@ -42,7 +42,7 @@ class DictionaryCategoryParameter(object):
         'dictionary': 'dictionary'
     }
 
-    def __init__(self, type='DICTIONARY', restrictions=None, dictionary=None):  # noqa: E501
+    def __init__(self, type='dictionary', restrictions=None, dictionary=None):  # noqa: E501
         """DictionaryCategoryParameter - a model defined in OpenAPI"""  # noqa: E501
 
         self._type = None

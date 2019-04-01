@@ -40,7 +40,7 @@ class FloatCategoryParameter(object):
         'restrictions': 'restrictions'
     }
 
-    def __init__(self, type='FLOAT', restrictions=None):  # noqa: E501
+    def __init__(self, type='float', restrictions=None):  # noqa: E501
         """FloatCategoryParameter - a model defined in OpenAPI"""  # noqa: E501
 
         self._type = None

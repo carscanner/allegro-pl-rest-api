@@ -33,21 +33,24 @@ class CategoryOptionsDto(object):
     openapi_types = {
         'advertisement': 'bool',
         'advertisement_price_optional': 'bool',
-        'variants_by_color_pattern_allowed': 'bool'
+        'variants_by_color_pattern_allowed': 'bool',
+        'offers_with_product_publication_enabled': 'bool'
     }
 
     attribute_map = {
         'advertisement': 'advertisement',
         'advertisement_price_optional': 'advertisementPriceOptional',
-        'variants_by_color_pattern_allowed': 'variantsByColorPatternAllowed'
+        'variants_by_color_pattern_allowed': 'variantsByColorPatternAllowed',
+        'offers_with_product_publication_enabled': 'offersWithProductPublicationEnabled'
     }
 
-    def __init__(self, advertisement=None, advertisement_price_optional=None, variants_by_color_pattern_allowed=None):  # noqa: E501
+    def __init__(self, advertisement=None, advertisement_price_optional=None, variants_by_color_pattern_allowed=None, offers_with_product_publication_enabled=None):  # noqa: E501
         """CategoryOptionsDto - a model defined in OpenAPI"""  # noqa: E501
 
         self._advertisement = None
         self._advertisement_price_optional = None
         self._variants_by_color_pattern_allowed = None
+        self._offers_with_product_publication_enabled = None
         self.discriminator = None
 
         if advertisement is not None:
@@ -56,6 +59,8 @@ class CategoryOptionsDto(object):
             self.advertisement_price_optional = advertisement_price_optional
         if variants_by_color_pattern_allowed is not None:
             self.variants_by_color_pattern_allowed = variants_by_color_pattern_allowed
+        if offers_with_product_publication_enabled is not None:
+            self.offers_with_product_publication_enabled = offers_with_product_publication_enabled
 
     @property
     def advertisement(self):
@@ -119,6 +124,27 @@ class CategoryOptionsDto(object):
         """
 
         self._variants_by_color_pattern_allowed = variants_by_color_pattern_allowed
+
+    @property
+    def offers_with_product_publication_enabled(self):
+        """Gets the offers_with_product_publication_enabled of this CategoryOptionsDto.  # noqa: E501
+
+
+        :return: The offers_with_product_publication_enabled of this CategoryOptionsDto.  # noqa: E501
+        :rtype: bool
+        """
+        return self._offers_with_product_publication_enabled
+
+    @offers_with_product_publication_enabled.setter
+    def offers_with_product_publication_enabled(self, offers_with_product_publication_enabled):
+        """Sets the offers_with_product_publication_enabled of this CategoryOptionsDto.
+
+
+        :param offers_with_product_publication_enabled: The offers_with_product_publication_enabled of this CategoryOptionsDto.  # noqa: E501
+        :type: bool
+        """
+
+        self._offers_with_product_publication_enabled = offers_with_product_publication_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,9 +31,21 @@ class CategoryParameter(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'type': 'str',
+        'required': 'bool',
+        'unit': 'str',
+        'options': 'CategoryParameterOptions'
     }
 
     attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'type': 'type',
+        'required': 'required',
+        'unit': 'unit',
+        'options': 'options'
     }
 
     discriminator_value_class_map = {
@@ -43,9 +55,156 @@ class CategoryParameter(object):
         'StringCategoryParameter': 'StringCategoryParameter'
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self, id=None, name=None, type=None, required=None, unit=None, options=None):  # noqa: E501
         """CategoryParameter - a model defined in OpenAPI"""  # noqa: E501
+
+        self._id = None
+        self._name = None
+        self._type = None
+        self._required = None
+        self._unit = None
+        self._options = None
         self.discriminator = 'type'
+
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        self.type = type
+        if required is not None:
+            self.required = required
+        if unit is not None:
+            self.unit = unit
+        if options is not None:
+            self.options = options
+
+    @property
+    def id(self):
+        """Gets the id of this CategoryParameter.  # noqa: E501
+
+
+        :return: The id of this CategoryParameter.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CategoryParameter.
+
+
+        :param id: The id of this CategoryParameter.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this CategoryParameter.  # noqa: E501
+
+
+        :return: The name of this CategoryParameter.  # noqa: E501
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CategoryParameter.
+
+
+        :param name: The name of this CategoryParameter.  # noqa: E501
+        :type: str
+        """
+
+        self._name = name
+
+    @property
+    def type(self):
+        """Gets the type of this CategoryParameter.  # noqa: E501
+
+
+        :return: The type of this CategoryParameter.  # noqa: E501
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CategoryParameter.
+
+
+        :param type: The type of this CategoryParameter.  # noqa: E501
+        :type: str
+        """
+        if type is None:
+            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
+
+        self._type = type
+
+    @property
+    def required(self):
+        """Gets the required of this CategoryParameter.  # noqa: E501
+
+
+        :return: The required of this CategoryParameter.  # noqa: E501
+        :rtype: bool
+        """
+        return self._required
+
+    @required.setter
+    def required(self, required):
+        """Sets the required of this CategoryParameter.
+
+
+        :param required: The required of this CategoryParameter.  # noqa: E501
+        :type: bool
+        """
+
+        self._required = required
+
+    @property
+    def unit(self):
+        """Gets the unit of this CategoryParameter.  # noqa: E501
+
+
+        :return: The unit of this CategoryParameter.  # noqa: E501
+        :rtype: str
+        """
+        return self._unit
+
+    @unit.setter
+    def unit(self, unit):
+        """Sets the unit of this CategoryParameter.
+
+
+        :param unit: The unit of this CategoryParameter.  # noqa: E501
+        :type: str
+        """
+
+        self._unit = unit
+
+    @property
+    def options(self):
+        """Gets the options of this CategoryParameter.  # noqa: E501
+
+
+        :return: The options of this CategoryParameter.  # noqa: E501
+        :rtype: CategoryParameterOptions
+        """
+        return self._options
+
+    @options.setter
+    def options(self, options):
+        """Sets the options of this CategoryParameter.
+
+
+        :param options: The options of this CategoryParameter.  # noqa: E501
+        :type: CategoryParameterOptions
+        """
+
+        self._options = options
 
     def get_real_child_model(self, data):
         """Returns the real base class specified by the discriminator"""

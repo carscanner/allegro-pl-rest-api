@@ -40,7 +40,7 @@ class IntegerCategoryParameter(object):
         'restrictions': 'restrictions'
     }
 
-    def __init__(self, type='INTEGER', restrictions=None):  # noqa: E501
+    def __init__(self, type='integer', restrictions=None):  # noqa: E501
         """IntegerCategoryParameter - a model defined in OpenAPI"""  # noqa: E501
 
         self._type = None
