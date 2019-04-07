@@ -47,6 +47,7 @@ class Offer(object):
         'name': 'str',
         'parameters': 'list[Parameter]',
         'payments': 'Payments',
+        'product': 'JustId',
         'promotion': 'Promotion',
         'publication': 'Publication',
         'selling_mode': 'SellingMode',
@@ -73,6 +74,7 @@ class Offer(object):
         'name': 'name',
         'parameters': 'parameters',
         'payments': 'payments',
+        'product': 'product',
         'promotion': 'promotion',
         'publication': 'publication',
         'selling_mode': 'sellingMode',
@@ -82,7 +84,7 @@ class Offer(object):
         'validation': 'validation'
     }
 
-    def __init__(self, additional_services=None, after_sales_services=None, category=None, compatibility_list=None, contact=None, created_at=None, delivery=None, description=None, ean=None, external=None, id=None, images=None, location=None, name=None, parameters=None, payments=None, promotion=None, publication=None, selling_mode=None, size_table=None, stock=None, updated_at=None, validation=None):  # noqa: E501
+    def __init__(self, additional_services=None, after_sales_services=None, category=None, compatibility_list=None, contact=None, created_at=None, delivery=None, description=None, ean=None, external=None, id=None, images=None, location=None, name=None, parameters=None, payments=None, product=None, promotion=None, publication=None, selling_mode=None, size_table=None, stock=None, updated_at=None, validation=None):  # noqa: E501
         """Offer - a model defined in OpenAPI"""  # noqa: E501
 
         self._additional_services = None
@@ -101,6 +103,7 @@ class Offer(object):
         self._name = None
         self._parameters = None
         self._payments = None
+        self._product = None
         self._promotion = None
         self._publication = None
         self._selling_mode = None
@@ -141,6 +144,8 @@ class Offer(object):
             self.parameters = parameters
         if payments is not None:
             self.payments = payments
+        if product is not None:
+            self.product = product
         if promotion is not None:
             self.promotion = promotion
         if publication is not None:
@@ -501,6 +506,27 @@ class Offer(object):
         """
 
         self._payments = payments
+
+    @property
+    def product(self):
+        """Gets the product of this Offer.  # noqa: E501
+
+
+        :return: The product of this Offer.  # noqa: E501
+        :rtype: JustId
+        """
+        return self._product
+
+    @product.setter
+    def product(self, product):
+        """Sets the product of this Offer.
+
+
+        :param product: The product of this Offer.  # noqa: E501
+        :type: JustId
+        """
+
+        self._product = product
 
     @property
     def promotion(self):

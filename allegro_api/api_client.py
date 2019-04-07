@@ -75,7 +75,7 @@ class ApiClient(object):
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'OpenAPI-Generator/2019.0/python'
+        self.user_agent = 'OpenAPI-Generator/2019.2/python'
 
     def __del__(self):
         if self._pool:

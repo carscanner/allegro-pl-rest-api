@@ -51,7 +51,7 @@ class IntegerCategoryParameter(CategoryParameter):
         'options': 'options'
     }
 
-    def __init__(self, id: str = None, name=None, required=None, unit=None, options=None, type='INTEGER', restrictions=None):  # noqa: E501
+    def __init__(self, id, name=None, required=None, unit=None, options=None, type='integer', restrictions=None):  # noqa: E501
         """IntegerCategoryParameter - a model defined in OpenAPI"""  # noqa: E501
 
         super().__init__(id, name, type, required, unit, options)
