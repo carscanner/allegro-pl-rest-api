@@ -26,7 +26,7 @@ class PublicOfferInformationApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def get_listing(self, **kwargs):  # noqa: E501
+    def get_listing(self, search_params: dict, **kwargs):  # noqa: E501
         """Search offers  # noqa: E501
 
         Use this resource to get a list of offers according to provided parameters. At least one of: phrase, seller.id or category.id is required. Additional available parameters vary depending on category.id. The parameters are defined in the filters entity. More information about this resource you can find <a href=\"../../news/2018-07-03-listing_ofert/\" target=\"_blank\">here</a>.  # noqa: E501
@@ -51,9 +51,9 @@ class PublicOfferInformationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_listing_with_http_info(**kwargs)  # noqa: E501
+            return self.get_listing_with_http_info(search_params, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_listing_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.get_listing_with_http_info(search_params, **kwargs)  # noqa: E501
             return data
 
     def get_listing_with_http_info(self, search_params: dict, **kwargs):  # noqa: E501
