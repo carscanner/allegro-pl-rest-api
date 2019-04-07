@@ -8,7 +8,7 @@ dist: xenial
 sudo: true
 cache: pip
 before_deploy:
-- pip install --user --upgrade setuptools wheel
+- pip install setuptools wheel
 - python setup.py sdist bdist_wheel
 deploy:
   provider: pypi
