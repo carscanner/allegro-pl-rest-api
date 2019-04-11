@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "allegro-pl-rest-api"
-VERSION = "2019.3"
+VERSION = "2019.4"
 # To install the library, run the following
 #
 # python setup.py install
@@ -26,10 +26,10 @@ REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 setup(
     name=NAME,
     version=VERSION,
-    description="Allegro REST API",
+    description="Allegro REST API client",
     author_email="",
-    url="",
-    keywords=["OpenAPI", "OpenAPI-Generator", "Allegro REST API"],
+    url="https://github.com/mattesilver/allegro-pl-rest-api",
+    keywords=["OpenAPI", "OpenAPI-Generator", "Allegro REST API client"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
