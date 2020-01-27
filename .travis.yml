@@ -16,6 +16,7 @@ before_deploy:
   - .travis/build.sh
   - cd generated
 deploy:
+  skip_cleanup: true
   provider: pypi
   on:
     condition: $CHANGED = 1
