@@ -4,7 +4,7 @@ CONFIG_FILE=openapi-generator-config.json
 SWAGGER_FILE=allegro.yaml
 
 pull_api(){
-  git clone --depth 1 git@github.com:mattesilver/allegro-swagger.git allegro-openapi
+  git clone --depth 1 https://github.com/mattesilver/allegro-swagger.git allegro-openapi
 }
 
 current_version(){
