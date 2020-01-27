@@ -14,7 +14,7 @@ sudo: true
 cache: pip
 before_deploy:
   - .travis/build.sh
-  - cd generated
+  - pushd generated
 deploy:
   skip_cleanup: true
   provider: pypi
@@ -26,6 +26,7 @@ deploy:
   password:
     secure: jSUNQVncEe/YNKynJe4JapYYvDVkN4iHrwA2p6/MiEyBvD3Mw9+bB3vQNGKdQyyHohuKXZHZT0LvLHEt/kFSWqPkyQ1KdoAbrjdVfY7JATtpeIaLlsTg4Gyvu9jkrGcc5xvlkoxHpXEZaOv7wF2Qrf7CHps0HC0VhOW/L9LuTmThL+yC2r1HAUVVIIXH9VqqfKT0ZLYkJD1/Wv34ZoHGS6iWMzwgg57hESubvoojEU2p8S5fG2czGoO6g4ZlsES35+5sxK2rQ5qiSr5jcY+ugLW/qT1a47+oCpIuL5usXcWGifDIPr8qcSdeMwqbu0OIX/Pd3frXA+vSuXAXmDZ91WGzj6e4WCmi2599dPSYIPtgjroYW/phjXu4uKMDAjM3+D5jg91ZySp/vx10lC/HXuxosD4mDVaPEO695gGSIOmtW4jlWjjpTyRhkdB8sI30EFZkqFtXiHzpHYMyVhnuSu9bwxxjeXXFOobcsbFta3VxQ9cks5QZeC9A6YIKNo+pMOapF99IdrvEoFTsdcIFSahZnlv7sJpMeYysE2afd9bnQsK6SdhWgS6emLjo5MWQFqv10WFaNjZnF70o9L0A4c2lPAuf3CPy/CFYk2SNjmhE/CIC+xZ2cMVzug6xNXh8BGFMKjZoqKbDfwVD41XiE7aPAl+VTRZWebo9Gl+JK+8=
 after_deploy:
+  - popd
   - .travis/push.sh
 notifications:
   email:
