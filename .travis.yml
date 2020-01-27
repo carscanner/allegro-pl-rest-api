@@ -14,6 +14,7 @@ sudo: true
 cache: pip
 before_deploy:
   - .travis/build.sh
+  - cd generated
 deploy:
   provider: pypi
   on:
