@@ -7,7 +7,7 @@ before_script:
   - chmod +x ~/openapi-generator-cli.sh
   - . .travis/generate.sh
 script:
-  - cd generated; pip install --user -r requirements.txt
+  - pip install -r generated/requirements.txt
   - cd generated; nosetests
 dist: xenial
 sudo: true
