@@ -40,7 +40,7 @@ mk_generator_config(){
 }
 
 generate(){
-  openapi-generator generate -c $CONFIG_FILE -g python -i $SWAGGER_FILE -o generated
+  ~/openapi-generator-cli.sh generate -c $CONFIG_FILE -g python -i $SWAGGER_FILE -o generated
   git add generated
 }
 

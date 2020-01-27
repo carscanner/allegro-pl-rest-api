@@ -2,6 +2,8 @@ language: python
 python:
   - '3.7'
 before_script:
+  - curl -o ~/openapi-generator-cli.sh https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/bin/utils/openapi-generator-cli.sh
+  - chmod +x ~/openapi-generator-cli.sh
   - . .travis/generate.sh
 script:
   - cd generated; nosetests
