@@ -8,7 +8,7 @@ before_script:
   - . .travis/generate.sh
 script:
   - pip install -r generated/requirements.txt
-  - cd generated; nosetests
+  - pushd generated; nosetests; popd
 dist: xenial
 sudo: true
 cache: pip

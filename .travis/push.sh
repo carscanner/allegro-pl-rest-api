@@ -11,7 +11,7 @@ commit_changes() {
 }
 
 upload_files() {
-  git remote add my-origin https://${GH_TOKEN}@github.com/mattesilver/allegro-swagger.git > /dev/null 2>&1
+  git remote add my-origin https://${GH_TOKEN}@github.com/mattesilver/allegro-pl-rest-api > /dev/null 2>&1
   git push --set-upstream my-origin $TRAVIS_BRANCH
 }
 
