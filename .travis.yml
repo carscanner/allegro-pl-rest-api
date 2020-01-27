@@ -1,25 +1,30 @@
 language: python
 python:
-- '3.4'
-- '3.5'
-- '3.7'
-script: nosetests
+  - '3.7'
+install: skip
+before_script:
+  - curl -o ~/openapi-generator-cli.sh https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/bin/utils/openapi-generator-cli.sh
+  - chmod +x ~/openapi-generator-cli.sh
+  - . .travis/generate.sh
+script:
+  - pip install -r generated/requirements.txt
+  - cd generated; nosetests
 dist: xenial
 sudo: true
 cache: pip
 before_deploy:
-- pip install setuptools wheel
-- python setup.py sdist bdist_wheel
+  - .travis/build.sh
 deploy:
   provider: pypi
   on:
-    tags: true
+    condition: $CHANGED = 1
     branch: master
-    python: 3.7
-  password:
-    secure: jSUNQVncEe/YNKynJe4JapYYvDVkN4iHrwA2p6/MiEyBvD3Mw9+bB3vQNGKdQyyHohuKXZHZT0LvLHEt/kFSWqPkyQ1KdoAbrjdVfY7JATtpeIaLlsTg4Gyvu9jkrGcc5xvlkoxHpXEZaOv7wF2Qrf7CHps0HC0VhOW/L9LuTmThL+yC2r1HAUVVIIXH9VqqfKT0ZLYkJD1/Wv34ZoHGS6iWMzwgg57hESubvoojEU2p8S5fG2czGoO6g4ZlsES35+5sxK2rQ5qiSr5jcY+ugLW/qT1a47+oCpIuL5usXcWGifDIPr8qcSdeMwqbu0OIX/Pd3frXA+vSuXAXmDZ91WGzj6e4WCmi2599dPSYIPtgjroYW/phjXu4uKMDAjM3+D5jg91ZySp/vx10lC/HXuxosD4mDVaPEO695gGSIOmtW4jlWjjpTyRhkdB8sI30EFZkqFtXiHzpHYMyVhnuSu9bwxxjeXXFOobcsbFta3VxQ9cks5QZeC9A6YIKNo+pMOapF99IdrvEoFTsdcIFSahZnlv7sJpMeYysE2afd9bnQsK6SdhWgS6emLjo5MWQFqv10WFaNjZnF70o9L0A4c2lPAuf3CPy/CFYk2SNjmhE/CIC+xZ2cMVzug6xNXh8BGFMKjZoqKbDfwVD41XiE7aPAl+VTRZWebo9Gl+JK+8=
   user:
     secure: wZuI9kQ3m/R4m869UOG+b/URPAG4D0BbWjfP9b1kM4MUerqnv9JwQ0JKl11sCubeTMDLFqeAZOLOr0Gr0Wn56KjBjliWWOANZbAbMXc3lMyUAQYxXeiCKMZI1HSJzNmS6gKHRwfyNhp29Is6JeOMGt5MhOOFNNkjQnQnNZTd1vONIZZFsMpNOMwqw09Uw8wH4c43DqSTkFaGGohTsO6EgRkT2x5Ims5HCgGX7kX3ew5xE7EPG4TRHr6ZIr/hGqsc94qlkV2UmkOooTd1QhXmSotAsD/+p79eBE8K+Wj9qBDX1Ap7qeu1kcP2vZf8sLSRHUvWOcY2kVzcwGjK8kE+xWRkYw8f8w3TgkrAuI2swZCNB2sbjE8oV77zGPfDqC9rG+JFLhNiiro2QuL6c5dpVWcwoUyA0QFIwLrrNa8w5Zgnt38U4vynZOuL+HrOl7gpfQnET4xhiRnAbllHOVFW89MxeuVX0RF/TcLeyy2XG3Xg0lt0C9RIX163Fj8aLk92zf66FuRNlhs8hgVLZsKAOhdJp4iRmgZ+Xj9+mdlNv72WKe7G+w4i0O3hcVIHvY5zRBLv1f2gh7vl2MhZXaROhyxdfG2CDT7dvC2Y43IVHAVWZanlkhbYS9CieReZdc0Lw0G6NxUnwb0r54y8od3N37KfxRYHIpdx9f9M+p8T3dA=
+  password:
+    secure: jSUNQVncEe/YNKynJe4JapYYvDVkN4iHrwA2p6/MiEyBvD3Mw9+bB3vQNGKdQyyHohuKXZHZT0LvLHEt/kFSWqPkyQ1KdoAbrjdVfY7JATtpeIaLlsTg4Gyvu9jkrGcc5xvlkoxHpXEZaOv7wF2Qrf7CHps0HC0VhOW/L9LuTmThL+yC2r1HAUVVIIXH9VqqfKT0ZLYkJD1/Wv34ZoHGS6iWMzwgg57hESubvoojEU2p8S5fG2czGoO6g4ZlsES35+5sxK2rQ5qiSr5jcY+ugLW/qT1a47+oCpIuL5usXcWGifDIPr8qcSdeMwqbu0OIX/Pd3frXA+vSuXAXmDZ91WGzj6e4WCmi2599dPSYIPtgjroYW/phjXu4uKMDAjM3+D5jg91ZySp/vx10lC/HXuxosD4mDVaPEO695gGSIOmtW4jlWjjpTyRhkdB8sI30EFZkqFtXiHzpHYMyVhnuSu9bwxxjeXXFOobcsbFta3VxQ9cks5QZeC9A6YIKNo+pMOapF99IdrvEoFTsdcIFSahZnlv7sJpMeYysE2afd9bnQsK6SdhWgS6emLjo5MWQFqv10WFaNjZnF70o9L0A4c2lPAuf3CPy/CFYk2SNjmhE/CIC+xZ2cMVzug6xNXh8BGFMKjZoqKbDfwVD41XiE7aPAl+VTRZWebo9Gl+JK+8=
+after_deploy:
+  - .travis/push.sh
 notifications:
   email:
     on_success: change
