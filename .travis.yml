@@ -13,7 +13,7 @@ before_script:
   - . .travis/generate.sh
 script: skip
 before_deploy:
-  - ../.travis/build.sh
+  - .travis/build.sh
 deploy:
   skip_cleanup: true
   provider: pypi
