@@ -13,9 +13,7 @@ before_script:
   - . .travis/generate.sh
   - pushd generated
 #  - pip3 install -r requirements.txt
-#script:
-## the generated tests are broken
-#  - nosetests
+script: false
 before_deploy:
   - ../.travis/build.sh
 deploy:
