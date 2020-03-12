@@ -1,0 +1,35 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from allegro_api.api.additional_services_api import AdditionalServicesApi
+from allegro_api.api.after_sale_services_api import AfterSaleServicesApi
+from allegro_api.api.auctions_and_bidding_api import AuctionsAndBiddingApi
+from allegro_api.api.badge_campaigns_api import BadgeCampaignsApi
+from allegro_api.api.batch_offer_modification_api import BatchOfferModificationApi
+from allegro_api.api.billing_api import BillingApi
+from allegro_api.api.blacklist_management_api import BlacklistManagementApi
+from allegro_api.api.categories_and_parameters_api import CategoriesAndParametersApi
+from allegro_api.api.classifieds_api import ClassifiedsApi
+from allegro_api.api.compatibility_list_api import CompatibilityListApi
+from allegro_api.api.contacts_api import ContactsApi
+from allegro_api.api.delivery_api import DeliveryApi
+from allegro_api.api.disputes_api import DisputesApi
+from allegro_api.api.images_and_attachments_api import ImagesAndAttachmentsApi
+from allegro_api.api.information_about_user_api import InformationAboutUserApi
+from allegro_api.api.offer_management_api import OfferManagementApi
+from allegro_api.api.offer_rating_api import OfferRatingApi
+from allegro_api.api.offer_tags_api import OfferTagsApi
+from allegro_api.api.offer_variants_api import OfferVariantsApi
+from allegro_api.api.order_management_api import OrderManagementApi
+from allegro_api.api.payments_api import PaymentsApi
+from allegro_api.api.points_of_service_api import PointsOfServiceApi
+from allegro_api.api.pricing_api import PricingApi
+from allegro_api.api.products_api import ProductsApi
+from allegro_api.api.promotion_campaigns_api import PromotionCampaignsApi
+from allegro_api.api.public_offer_information_api import PublicOfferInformationApi
+from allegro_api.api.public_user_information_api import PublicUserInformationApi
+from allegro_api.api.sets_and_rebates_api import SetsAndRebatesApi
+from allegro_api.api.size_tables_api import SizeTablesApi
+from allegro_api.api.users_offer_information_api import UsersOfferInformationApi
