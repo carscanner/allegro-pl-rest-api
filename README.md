@@ -6,8 +6,8 @@
 Built from OpenAPI definition at [Allegro API Monitor](/mattesilver/allegro-swagger)
 
 See also:
-- [Allegro API](/allegro/allegro-api) official bug tracker and
-- [allegro-pl](/mattesilver/allegro-pl) python SDK for both REST and SOAP APIs
+- [Allegro API](https://github.com/allegro/allegro-api) official bug tracker and
+- [allegro-pl](https://github.com/mattesilver/allegro-pl) python SDK for both REST and SOAP APIs
 
 ## Build process
 
